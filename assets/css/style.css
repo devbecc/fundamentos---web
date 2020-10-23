@@ -82,21 +82,20 @@ margin-bottom: 50px;
 
 margin-left: 30px;
 
-
 }
 
 .cor_copy {
 
-    text-decoration: none;
+    text-decoration: Courier New;
     color: black;
-    font-size: 13px;
+    font-size: 15   px;
 
 }
 
 
 .cor_copy2 {
 
-    text-decoration: none;
+    text-decoration: Courier New;
     color: rgba(255, 255, 255, 0.445);
     font-size: 13px;
 

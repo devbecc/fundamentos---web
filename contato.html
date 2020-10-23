@@ -27,24 +27,28 @@
         <form>
             <h2>Mande uma mensagem</h2>
             <label for="nome">Nome:</label> 
-            <input type="text"id="nome">
-            
+            <input type="text" id="nome" onkeyup='validaNome()'>
+
+            <div id="txtNome"></div>
            
             <label for="sobrenome">Sobrenome:</label> 
             <input type="text"id="sobrenome">
             <p>
            
             <label for="email">E-mail:</label>
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup='validaEmail()'> 
+            <div id="txtEmail"></div>
+
             <br>
             <br>
            
             <label for="assunto">Assunto:</label>  <br>
-           <textarea name="assunto" id="assunto" cols="50" rows="10"></textarea>
-           <br>
+           <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup='validaAssunto()'></textarea>
+           <div id="txtAssunto"></div>
+           
           
                
-            <button>Enviar</button>          
+            <button onclick="enviar()">Enviar</button>          
           
            
            </form>
@@ -66,7 +70,11 @@ frameborder="0"
 style="border:0;" 
 allowfullscreen="" 
 aria-hidden="false" 
-tabindex="0"></iframe>
+tabindex="0"
+onmousemove="mapaZoom()"
+onmouseout="mapaNormal()"
+id='mapa'>
+</iframe>
 
    
     </div>
@@ -92,15 +100,19 @@ tabindex="0"></iframe>
 </a>
 
 </div>
-<center> <p  class="cor_copy">
+<div class="center"> <p  class="cor_copy">
 
    Rebecca Medeiros &copy
 
-</center>
+</div>
  </p>
   </footer>
 
  
+<script src="assets/js/script.js">
 
+
+
+</script>
 </body>
 </html>
